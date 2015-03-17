@@ -13,6 +13,7 @@ var catName = "fluffy";
 document.getElementById('cat-name').innerHTML = catName;
 var catImg = document.getElementById('cat-img');
 var catCount = document.getElementById('cat-count');
+
 var twinCatName = "buffy";
 document.getElementById('twincat-name').innerHTML = twinCatName;
 var twinCatImg = document.getElementById('twincat-img');
@@ -24,12 +25,12 @@ var catIncrementer = function(){
 	catCount.innerText = counter;
 };
 
-// var twinCounter = 0;
-// var twinCatIncrementer = function(){
-// 	twinCounter++;
-// 	twinCatCount.innerText = twinCounter;
-// };
+var twinCounter = 0;
+var twinCatIncrementer = function(){
+	twinCounter++;
+	twinCatCount.innerText = twinCounter;
+};
 
 catImg.addEventListener('click', catIncrementer, false);
-//twinCatImg.addEventListener('click', twinCatIncrementer, false);
+twinCatImg.addEventListener('click', twinCatIncrementer, false);
 
