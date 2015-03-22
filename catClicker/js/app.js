@@ -9,13 +9,11 @@
 // btn.appendChild(clickOnMeow);
 
 // If you're writing Cat Clicker with vanilla JS (no jQuery), you'll be adding the "click" event with elem.addEventListener()
-// add a name for our cat
 var catName = "fluffy";
 document.getElementById('cat-name').innerHTML = catName;
 var catImg = document.getElementById('cat-img');
 var catCount = document.getElementById('cat-count');
 
-// add a second cat, with a name and counter
 var twinCatName = "buffy";
 document.getElementById('twincat-name').innerHTML = twinCatName;
 var twinCatImg = document.getElementById('twincat-img');
