@@ -7,11 +7,13 @@ document.getElementById('cat-name').innerHTML = catName;
 var catImg = document.getElementById('cat-img');
 var catCount = document.getElementById('cat-count');
 
+// now they want two cats! 
 var twinCatName = "buffy";
 document.getElementById('twincat-name').innerHTML = twinCatName;
 var twinCatImg = document.getElementById('twincat-img');
 var twinCatCount = document.getElementById('twincat-count');
 
+// function that increments and stores the click count 
 var counter = 0;
 var catIncrementer = function(){
 	counter++;
@@ -24,6 +26,7 @@ var twinCatIncrementer = function(){
 	twinCatCount.innerText = twinCounter;
 };
 
+// call the incrementer functions on each cat image, on the event type 'click'
 catImg.addEventListener('click', catIncrementer, false);
 twinCatImg.addEventListener('click', twinCatIncrementer, false);
 
